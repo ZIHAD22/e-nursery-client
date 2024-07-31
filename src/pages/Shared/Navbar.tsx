@@ -8,7 +8,7 @@ import {
 
 const Navbar: React.FC = () => {
   return (
-    <div className="mx-auto container  ">
+    <div className="mx-auto">
       <div className="flex  items-center justify-between py-3 ">
         <a href="" className="flex items-center">
           <h3 className="font-extrabold bg-green-600 p-2 rounded-md tracking-widest text-xl">

@@ -1,10 +1,12 @@
+import Home from "@/pages/Home/Home";
 import Footer from "@/pages/Shared/Footer";
 import Navbar from "@/pages/Shared/Navbar";
 
 const MainLayout: React.FC = () => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
+      <Home />
       <Footer />
     </div>
   );
