@@ -34,8 +34,8 @@ const Hero = () => {
             </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="hover:bg-[var(--wGreen)] hover:text-[var(--bGreen)]" />
+        <CarouselNext className="hover:bg-[var(--wGreen)] hover:text-[var(--bGreen)]" />
       </Carousel>
     </div>
   );

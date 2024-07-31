@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     <div className="mx-auto">
       <div className="flex  items-center justify-between py-3 ">
         <a href="" className="flex items-center">
-          <h3 className="font-extrabold bg-green-600 p-2 rounded-md tracking-widest text-xl">
+          <h3 className="font-extrabold bg-[var(--bGreen)] p-2 rounded-md tracking-widest text-xl">
             E-Nursery
           </h3>
         </a>
@@ -19,22 +19,16 @@ const Navbar: React.FC = () => {
           <NavigationMenuList>
             <div className="flex justify-end">
               <NavigationMenuItem>
-                <NavigationMenuLink className="p-2 rounded-md font-medium hover:text-green-600 hover:bg-[#bfedd0] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-green-600">
+                <NavigationMenuLink className="p-3 rounded-md font-medium hover:text-[var(--bGreen)] hover:bg-[var(--wGreen)] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-[var(--bGreen)] mr-1">
                   Products
                 </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink className="p-2 rounded-md font-medium hover:text-green-600 hover:bg-[#bfedd0] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-green-600">
+                <NavigationMenuLink className="p-3 rounded-md font-medium hover:text-[var(--bGreen)] hover:bg-[var(--wGreen)] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-[var(--bGreen)] mr-1">
                   Products
                 </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink className="p-2 rounded-md font-medium hover:text-green-600 hover:bg-[#bfedd0] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-green-600">
+                <NavigationMenuLink className="p-3 rounded-md font-medium hover:text-[var(--bGreen)] hover:bg-[var(--wGreen)] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-[var(--bGreen)] mr-1">
                   Products
                 </NavigationMenuLink>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuLink className="p-2 rounded-md font-medium hover:text-green-600 hover:bg-[#bfedd0] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-green-600">
+                <NavigationMenuLink className="p-3 rounded-md font-medium hover:text-[var(--bGreen)] hover:bg-[var(--wGreen)] delay-75 duration-200 cursor-pointer hover:border-b-[1px] hover:border-b-[var(--bGreen)] mr-1">
                   Products
                 </NavigationMenuLink>
               </NavigationMenuItem>
