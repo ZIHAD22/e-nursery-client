@@ -1,4 +1,5 @@
 // import { Link } from "react-router-dom";
+import { Input } from "@/components/ui/input";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -10,8 +11,11 @@ const Navbar: React.FC = () => {
   return (
     <div className="mx-auto">
       <div className="flex  items-center justify-between py-3 ">
+        <div>
+          <Input className="outline-none" type="text" placeholder="Search" />
+        </div>
         <a href="" className="flex items-center">
-          <h3 className="font-extrabold bg-[var(--bGreen)] p-2 rounded-md tracking-widest text-xl">
+          <h3 className="font-extrabold hover:border-b-[1px] hover:border-[var(--bGreen)] p-2 rounded-md tracking-widest text-xl">
             E-Nursery
           </h3>
         </a>
