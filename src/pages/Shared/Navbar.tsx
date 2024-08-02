@@ -6,6 +6,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@radix-ui/react-navigation-menu";
+import logo from "../../assets/icons/logo.png";
 
 const Navbar: React.FC = () => {
   return (
@@ -15,9 +16,10 @@ const Navbar: React.FC = () => {
           <Input className="outline-none" type="text" placeholder="Search" />
         </div>
         <a href="" className="flex items-center">
-          <h3 className="font-extrabold hover:border-b-[1px] hover:border-[var(--bGreen)] p-2 rounded-md tracking-widest text-xl">
+          {/* <h3 className="font-extrabold hover:border-b-[1px] hover:border-[var(--bGreen)] p-2 rounded-md tracking-widest text-xl">
             E-Nursery
-          </h3>
+          </h3> */}
+          <img src={logo} className="w-[300px] h-[100px]" alt="" />
         </a>
         <NavigationMenu className="">
           <NavigationMenuList>
