@@ -16,7 +16,7 @@ type TCateCard = {
 const CategoriesCard = ({ title, productCount }: TCateCard) => {
   return (
     <Card className="w-[350px] my-5">
-      <img src={cardImg} alt="" />
+      <img src={cardImg} className="object-cover w-full h-[370px]" alt="" />
       <div>
         <CardHeader>
           <CardTitle>{title}</CardTitle>
@@ -26,7 +26,12 @@ const CategoriesCard = ({ title, productCount }: TCateCard) => {
         </CardHeader>
 
         <CardFooter className="flex justify-end">
-          <Button className="hover:bg-[var(--bGreen)]">See Details</Button>
+          <Button
+            variant="outline"
+            className="hover:bg-[var(--bGreen)] border-[var(--bGreen)]"
+          >
+            See Details
+          </Button>
         </CardFooter>
       </div>
     </Card>
