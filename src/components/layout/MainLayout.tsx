@@ -1,7 +1,7 @@
-import Home from "@/pages/Home/Home";
 import Footer from "@/pages/Shared/Footer";
 import Navbar from "@/pages/Shared/Navbar";
 import Offers from "@/pages/Shared/Offers";
+import { Outlet } from "react-router-dom";
 
 const MainLayout: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const MainLayout: React.FC = () => {
       <Offers />
       <div className="container">
         <Navbar />
-        <Home />
+        <Outlet />
         <Footer />
       </div>
     </div>

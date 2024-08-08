@@ -58,7 +58,7 @@ const Gallery = () => {
       <div>
         <PageTitle sideName="Our" mainName="Gallery" />
       </div>
-      <div>
+      <div className="rounded-xl">
         <RowsPhotoAlbum
           photos={photos}
           render={{
