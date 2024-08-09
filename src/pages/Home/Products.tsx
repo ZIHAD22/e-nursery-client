@@ -8,11 +8,11 @@ type TProducts = {
   rating: number;
 };
 
-const products: TProducts[] = [
+export const productData: TProducts[] = [
   {
     image:
       "https://www.thetreecenter.com/c/uploads/thuja-green-giant-blue-edit-2-jpg-340x453.avif",
-    title: "Thuja Green Giant",
+    title: "Thuja Green Giant Lorem ipsum dolor sit amet.",
     price: 100,
     rating: 5,
   },
@@ -74,7 +74,7 @@ const Products = () => {
         <PageTitle sideName="Popular" mainName="Products" />
       </div>
       <div className="grid grid-cols-3 gap-4">
-        {products.map((product, key) => (
+        {productData.map((product, key) => (
           <ProductCard
             key={key}
             image={product.image}

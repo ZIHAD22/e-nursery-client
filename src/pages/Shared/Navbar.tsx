@@ -7,19 +7,15 @@ import {
   NavigationMenuList,
 } from "@radix-ui/react-navigation-menu";
 import logo from "../../assets/icons/logo.png";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
-  const location = useLocation();
-
   return (
     <div className="mx-auto">
       <div className="flex  items-center justify-between py-3 ">
-        {location.pathname !== "/products" && (
-          <div>
-            <Input className="outline-none" type="text" placeholder="Search" />
-          </div>
-        )}
+        <div>
+          <Input className="outline-none" type="text" placeholder="Search" />
+        </div>
         <div className="flex items-center">
           <Link to="/">
             <img src={logo} className="w-[210px] h-[100px]" alt="" />
