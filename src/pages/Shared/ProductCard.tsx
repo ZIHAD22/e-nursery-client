@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Rating } from "@smastrom/react-rating";
+import { Link } from "react-router-dom";
 
 type TProducts = {
   hight?: string;
@@ -55,9 +56,11 @@ const ProductCard = ({
               />
             </span>
           </CardDescription>
-          <Button variant="outline" className="">
-            See Details
-          </Button>
+          <Link to={`/${title.toLowerCase().replace(/\s+/g, "-")}`}>
+            <Button variant="outline" className="">
+              See Details
+            </Button>
+          </Link>
         </CardFooter>
       </div>
     </Card>

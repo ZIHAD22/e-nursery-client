@@ -1,6 +1,7 @@
 import App from "@/App";
 import Home from "@/pages/Home/Home";
 import Product from "@/pages/Product/Product";
+import ProductDetails from "@/pages/ProductDetails/ProductDetails";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -16,6 +17,10 @@ const routes = createBrowserRouter([
       {
         path: "products",
         element: <Product />,
+      },
+      {
+        path: "/:id",
+        element: <ProductDetails />,
       },
     ],
   },
