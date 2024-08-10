@@ -55,10 +55,7 @@ const ProductCard = ({
               />
             </span>
           </CardDescription>
-          <Button
-            variant="outline"
-            className="hover:bg-[var(--bGreen)] border-[var(--bGreen)]"
-          >
+          <Button variant="outline" className="">
             See Details
           </Button>
         </CardFooter>

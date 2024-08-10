@@ -26,10 +26,7 @@ const CategoriesCard = ({ title, productCount }: TCateCard) => {
         </CardHeader>
 
         <CardFooter className="flex justify-end">
-          <Button
-            variant="outline"
-            className="hover:bg-[var(--bGreen)] border-[var(--bGreen)]"
-          >
+          <Button variant="outline" className="">
             See Details
           </Button>
         </CardFooter>
