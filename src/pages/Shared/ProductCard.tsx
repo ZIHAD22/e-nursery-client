@@ -28,12 +28,14 @@ const ProductCard = ({
 }: TProducts) => {
   console.log(width);
   return (
-    <Card className={`w-[${width ? width : "350px"}] my-5 overflow-hidden`}>
-      <img
-        src={image}
-        className={`object-cover w-full h-[${hight ? hight : "370px"}]`}
-        alt=""
-      />
+    <Card className={`w-[${width ? width : "350px"}] overflow-hidden`}>
+      <div>
+        <img
+          className={`object-cover w-full h-[${hight ? hight : "370px"}]`}
+          src={image}
+          alt=""
+        />
+      </div>
       <div className="">
         <CardHeader className="py-6 ps-6">
           <CardTitle className="text-[20px]">

@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     <div className="mx-auto">
       <div className="flex  items-center justify-between py-3 ">
         <div>
-          <Input className="outline-none" type="text" placeholder="Search" />
+          <Input className="" type="text" placeholder="Search" />
         </div>
         <div className="flex items-center">
           <Link to="/">

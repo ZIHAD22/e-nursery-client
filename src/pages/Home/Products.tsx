@@ -73,7 +73,7 @@ const Products = () => {
       <div>
         <PageTitle sideName="Popular" mainName="Products" />
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         {productData.map((product, key) => (
           <ProductCard
             key={key}
@@ -81,6 +81,7 @@ const Products = () => {
             title={product.title}
             price={product.price}
             rating={product.rating}
+            width="250px"
           />
         ))}
       </div>
