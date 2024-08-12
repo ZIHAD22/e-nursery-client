@@ -56,7 +56,7 @@ const ProductCard = ({
               />
             </span>
           </CardDescription>
-          <Link to={`/${title.toLowerCase().replace(/\s+/g, "-")}`}>
+          <Link to={`/products/${title.toLowerCase().replace(/\s+/g, "-")}`}>
             <Button variant="outline" className="">
               See Details
             </Button>

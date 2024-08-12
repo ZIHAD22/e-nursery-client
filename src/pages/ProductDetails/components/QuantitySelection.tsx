@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
+// import { SheetTrigger } from "@/components/ui/sheet";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import SideCart from "../SideCart";
 
 const QuantitySelection = () => {
   return (
@@ -79,9 +81,11 @@ const QuantitySelection = () => {
       </div>
       <hr />
       <div className="text-center mt-3">
-        <Button variant="outline" className="py-7 w-[200px]">
-          Add to Cart
-        </Button>
+        <SideCart>
+          <Button variant="outline" className="py-7 w-[200px]">
+            Add to Cart
+          </Button>
+        </SideCart>
       </div>
     </div>
   );
