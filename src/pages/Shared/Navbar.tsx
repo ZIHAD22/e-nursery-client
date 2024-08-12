@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
     <div className="mx-auto">
       <div className="flex  items-center justify-between py-3 ">
         <div>
-          <Input className="" type="text" placeholder="Search" />
+          <Input type="text" placeholder="Search" />
         </div>
         <div className="flex items-center">
           <Link to="/">
@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
                   Products
                 </Link>
                 <Link
-                  to="/"
+                  to="/shopping-cart"
                   className="p-3 rounded-md font-medium text-[var(--bGreen)] hover:bg-[var(--wGreen)] delay-75 duration-200 cursor-pointer border border-[var(--bGreen)] mr-1"
                 >
                   <FaCartShopping size="20px" className="inline-block" />

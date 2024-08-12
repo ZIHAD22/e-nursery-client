@@ -1,4 +1,5 @@
 import App from "@/App";
+import Cart from "@/pages/Cart/Cart";
 import Home from "@/pages/Home/Home";
 import Product from "@/pages/Product/Product";
 import ProductDetails from "@/pages/ProductDetails/ProductDetails";
@@ -21,6 +22,10 @@ const routes = createBrowserRouter([
       {
         path: "products/:id",
         element: <ProductDetails />,
+      },
+      {
+        path: "shopping-cart",
+        element: <Cart />,
       },
     ],
   },
