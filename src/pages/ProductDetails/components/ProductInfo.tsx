@@ -18,10 +18,10 @@ const ProductInfo = () => {
             </h5>
           </div>
         </div>
-        <div>
-          <h5 className="text-xs text-gray-600">35052 reviews</h5>
+        <div className="my-auto">
+          <h5 className="text-sm text-gray-600">35052 reviews</h5>
           <Rating
-            style={{ maxWidth: 100 }}
+            style={{ maxWidth: 150 }}
             value={5}
             readOnly={true}
             halfFillMode="svg"
