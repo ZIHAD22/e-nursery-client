@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { FaMinus, FaPlus } from "react-icons/fa";
 
 const QuantitySelection = () => {
   return (
     <div className="mb-5">
-      <div className="mb-12">
+      <div className="mb-6">
         <h4 className="text-sm text-gray-600 font-medium ">SELECT SIZE</h4>
         <div className="">
           <Button
@@ -64,46 +65,24 @@ const QuantitySelection = () => {
       </div>
       <div className="mb-6">
         <h4 className="text-sm text-gray-600 font-medium">SELECT QUANTITY</h4>
-        <div className="">
-          <Button
-            variant="outline"
-            className="text-gray-600 font-semibold mt-3 mr-4"
-          >
-            Single Plant
+        <div className="flex justify-between items-center border border-[var(--bGreen)] w-[170px] px-2 py-[7px] rounded-md mt-2">
+          <Button variant="outline" className="font-bold">
+            <FaPlus />
           </Button>
-          <Button
-            variant="outline"
-            className="text-gray-600 font-semibold mt-3 mr-4"
-          >
-            Single Plant
-          </Button>
-          <Button
-            variant="outline"
-            className="text-gray-600 font-semibold mt-3 mr-4"
-          >
-            Single Plant
-          </Button>
-          <Button
-            variant="outline"
-            className="text-gray-600 font-semibold mt-3 mr-4"
-          >
-            Single Plant
-          </Button>
-          <Button
-            variant="outline"
-            className="text-gray-600 font-semibold mt-3 mr-4"
-          >
-            Single Plant
-          </Button>
-          <Button
-            variant="outline"
-            className="text-gray-600 font-semibold mt-3 mr-4"
-          >
-            Single Plant
+          <span className="text-[var(--bGreen)] font-medium text-[30px]">
+            0
+          </span>
+          <Button variant="outline" className="font-bold">
+            <FaMinus />
           </Button>
         </div>
       </div>
       <hr />
+      <div className="text-center mt-3">
+        <Button variant="outline" className="py-7 w-[200px]">
+          Add to Cart
+        </Button>
+      </div>
     </div>
   );
 };
