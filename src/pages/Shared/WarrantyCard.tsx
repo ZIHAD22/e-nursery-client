@@ -6,7 +6,7 @@ import { useState } from "react";
 const WarrantyCard = () => {
   const [warrantyValue, setWarranty] = useState(false);
   return (
-    <div className="bg-[#1e3045] text-white p-4 grid grid-cols-3">
+    <div className="bg-[var(--bGreen)] text-white p-4 grid grid-cols-2 md:grid-cols-3">
       <div>
         <img src={warrantyImg} alt="" />
       </div>
