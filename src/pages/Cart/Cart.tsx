@@ -3,6 +3,7 @@ import Coupon from "./Components/Coupon";
 import CartPriceTag from "./Components/CartPriceTag";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import WarrantyCard from "../Shared/WarrantyCard";
 
 const Cart = () => {
   return (
@@ -17,12 +18,16 @@ const Cart = () => {
         </div>
         <div className="w-[40%] font-mono">
           <div>
+            <WarrantyCard />
+          </div>
+          <div>
             <Coupon />
           </div>
           <div>
             <CartPriceTag name="Shipping" price="29.95" />
             <CartPriceTag name="Shipping" price="29.95" />
             <CartPriceTag name="Shipping" price="29.95" />
+            <CartPriceTag name="1 Yr Warranty" price="30" />
             <hr />
             <CartPriceTag name="Total" price="200" />
           </div>
