@@ -5,13 +5,11 @@ import { Outlet } from "react-router-dom";
 
 const MainLayout: React.FC = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-white text-[#13231c]">
       <Offers />
-      <div className="container">
-        <Navbar />
-        <Outlet />
-        <Footer />
-      </div>
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
   );
 };

@@ -1,33 +1,30 @@
-import { Button } from "@/components/ui/button";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { catalogProducts } from "@/data/products";
 
 const MiniShopCart = () => {
+  const product = catalogProducts[2];
+
   return (
-    <div className="grid grid-cols-3 gap-2 mt-3 tracking-wide">
-      <div className="min-w-[60%]">
+    <div className="mt-3 grid grid-cols-[96px_1fr] gap-4 tracking-wide">
+      <div>
         <img
-          src="https://www.thetreecenter.com/c/uploads/thuja-green-giant-blue-edit-2-jpg-webp.avif"
-          alt=""
-          className="h-[130px] w-full opacity-90 delay-200 duration-75"
+          src={product.image}
+          alt={product.name}
+          className="size-24 rounded object-cover"
         />
       </div>
-      <div className="col-span-2">
-        <h4 className="text-xl font-bold text-gray-700">Thuja Green Giant</h4>
-        <h5 className="text-gray-500">1-2 Foot</h5>
-        <h5 className="font-semibold">$24.50</h5>
-        <div className="flex justify-between items-center border border-[var(--bGreen)] w-[120px] px-2 rounded-md mt-4">
-          <Button
-            variant="outline"
-            className="font-bold h-[15px] w-[30px] p-2 m-0"
-          >
+      <div>
+        <h4 className="text-lg font-bold text-[#303447]">{product.name}</h4>
+        <h5 className="text-[#6b6f68]">{product.sizes[0]}</h5>
+        <h5 className="font-semibold">{product.price}</h5>
+        <div className="mt-4 flex w-[120px] items-center justify-between rounded-md border border-[#13b94b] px-2 py-1">
+          <button className="font-bold">
             <FaPlus size="10px" />
-          </Button>
-          <span className="text-[var(--bGreen)] font-medium text-[20px]">
-            0
-          </span>
-          <Button variant="outline" className="font-bold h-[15px] w-[30px] p-2">
+          </button>
+          <span className="text-[20px] font-medium text-[#13b94b]">1</span>
+          <button className="font-bold">
             <FaMinus />
-          </Button>
+          </button>
         </div>
       </div>
     </div>

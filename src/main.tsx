@@ -6,11 +6,14 @@ import "./index.css";
 import "@smastrom/react-rating/style.css";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes/routes.tsx";
+import { ThemeProvider } from "./components/theme/ThemeProvider.tsx";
 
 // light box css
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={routes} />
+    <ThemeProvider>
+      <RouterProvider router={routes} />
+    </ThemeProvider>
   </React.StrictMode>
 );

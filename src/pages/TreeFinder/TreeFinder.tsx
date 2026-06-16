@@ -38,7 +38,7 @@ const Divider = () => (
   </div>
 );
 
-const Product = () => {
+const TreeFinder = () => {
   const [query, setQuery] = useState("tree");
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
@@ -152,9 +152,9 @@ const Product = () => {
       </section>
 
       <section className="mx-auto mt-24 grid max-w-[1400px] gap-7 px-4 sm:grid-cols-2 lg:grid-cols-5">
-        {catalogProducts.map((product) => (
+        {catalogProducts.map((product, index) => (
           <article
-            key={product.id}
+            key={`${product.name}-${index}`}
             className="group flex min-h-[500px] flex-col rounded-lg border border-[#e2e5df] bg-white p-4 text-center shadow-sm transition-shadow hover:shadow-md"
           >
             <Link to={`/products/${product.id}`} className="relative overflow-hidden rounded-lg">
@@ -164,37 +164,32 @@ const Product = () => {
                 className="aspect-square w-full object-cover"
               />
               {product.badge && (
-                  <span className="absolute left-0 top-3 bg-white px-3 py-1 text-xs font-bold text-[#13231c]">
+                <span className="absolute left-0 top-3 bg-white px-3 py-1 text-xs font-bold">
                   {product.badge}
                 </span>
               )}
               <div className="absolute right-3 top-3 hidden overflow-hidden rounded-lg bg-white shadow-md group-hover:block">
-                <span className="grid size-12 place-items-center border-b border-[#e2e5df]">
+                <button className="grid size-12 place-items-center border-b border-[#e2e5df]">
                   <Search size={22} />
-                </span>
-                <span className="grid size-12 place-items-center">
+                </button>
+                <button className="grid size-12 place-items-center">
                   <Heart size={22} />
-                </span>
+                </button>
               </div>
             </Link>
-            <Link
-              to={`/products/${product.id}`}
-              className="mt-3 min-h-[58px] text-xl font-semibold leading-tight text-[#303030]"
-            >
+            <Link to={`/products/${product.id}`} className="mt-3 min-h-[58px] text-xl font-semibold leading-tight text-[#303030]">
               {product.name}
             </Link>
-            <p className="mt-auto pt-5 font-bold text-[#173f2d]">
-              {product.price}
-            </p>
+            <p className="mt-auto pt-5 font-bold text-[#173f2d]">{product.price}</p>
             <div className="mt-4 grid gap-2">
               <SideCart product={product}>
-                <button className="w-full bg-[#173f2d] px-4 py-3 text-xs font-bold text-white dark:bg-[#63d857] dark:text-[#06100b]">
+                <button className="w-full bg-[#173f2d] px-4 py-3 text-xs font-bold text-white">
                   Add to Basket
                 </button>
               </SideCart>
               <Link
                 to="/shopping-cart"
-                className="w-full border border-[#173f2d] px-4 py-3 text-xs font-bold text-[#173f2d] dark:border-[#63d857] dark:text-[#63d857]"
+                className="w-full border border-[#173f2d] px-4 py-3 text-xs font-bold text-[#173f2d]"
               >
                 Buy Now
               </Link>
@@ -202,8 +197,14 @@ const Product = () => {
           </article>
         ))}
       </section>
+
+      <div className="mt-12 flex justify-center">
+        <button className="border border-[#d9ddd5] px-6 py-3 font-medium">
+          Loading...
+        </button>
+      </div>
     </main>
   );
 };
 
-export default Product;
+export default TreeFinder;

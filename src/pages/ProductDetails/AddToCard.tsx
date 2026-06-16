@@ -1,13 +1,3 @@
-import ProductInfo from "./components/ProductInfo";
-import QuantitySelection from "./components/QuantitySelection";
-
-const AddToCard = () => {
-  return (
-    <div>
-      <ProductInfo />
-      <QuantitySelection />
-    </div>
-  );
-};
+const AddToCard = () => null;
 
 export default AddToCard;
